@@ -130,11 +130,11 @@ button, input[type=submit]{
 }
 
 #cache {
-  background-image: url('../images/background/cacheBackground.jpg');
+  background-image: url('../images/background/cachebackground.jpg');
 }
 
 #overpass {
-  background-image: url('../images/background/overpassBackground.jpg');
+  background-image: url('../images/background/overpassbackground.jpg');
 }
 #nuke {
   background-image: url('../images/background/nukeBackground.jpg');
