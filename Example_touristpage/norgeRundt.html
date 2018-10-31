@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+
+  <script type="text/javascript" src="js/norgeRundt.js"></script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js??sensor=false&libraries=geometry&key=AIzaSyDW0dQoqfTMtAf1-H1lcpw-TKRcCimkhTc&" type="text/javascript">
+  </script>
+
+  <title>Aktiviteter Norge Rundt</title>
+</head>
+<body >
+  <header>
+    <h1>Norge Rundt</h1>
+    <nav>
+      <ul class="navigation">
+        <li><a href="./index.html">Hjem</a></li>
+        <li> <a href="./information.html">Informasjon</a> </li>
+        <li> <a  href="./toilets.html">Toaletter</a></li>
+        <li> <a href="./playgrounds.html">Lekeplasser</a></li>
+        <li> <a href="./favorites.html">FavorittLekeplasser</a></li>
+        <li> <a class="active" href="./norgeRundt.html">Norge Rundt</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+      <fieldset>
+        <form class="searchForm" method="post" name="advsearchform">
+
+        <section id="fieldSection">
+          <div>
+            <label for="tittel">Tittel</label>
+            <input id="tittel" type="text" placeholder="Søk tittel. Forslag: Trønderlån">
+          </div>
+
+          <div>
+            <label for="aar">År</label>
+            <input id="aar" type="text" placeholder="Søk År. Forslag: 1976">
+          </div>
+
+          <div>
+            <label for="kommune">Kommune</label>
+            <input id="kommune" type="text" placeholder="Søk Kommune. Forslag: Bergen">
+          </div>
+
+          <button type="button" id="buttonAdvanced" onclick="searchEntries()"
+          value="Søk">Søk Avansert med Skjema</button>
+
+        </section>
+        </form>
+      </fieldset>
+
+    </div>
+    <div class="pContainer">
+
+    <div id = "dataområde"></div>
+      <ol id="arrayListen"></ol>
+
+    </div>
+  </main>
+
+  <footer>
+    <address>
+      <strong>Åpningstider:</strong> 10:00-17:00 <strong>Email:</strong> besokbergen@kontakt.no <strong>Hovedkontor:</strong> Ulrike Pihls hus, 5007 Bergen
+      <br /><br /><em>Nettsiden er laget av gruppe 7777, medlemmer 105, 129, 268 og 232 </em>
+    </address>
+  </footer>
+
+</body>
+</html>

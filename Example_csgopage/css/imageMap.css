@@ -1,0 +1,4 @@
+li .a:hover, .b:hover, .c:hover, .d:hover {
+	color: red;
+	filter: grayscale(1);
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+
+  <script type="text/javascript" src="js/maps.js"></script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js??sensor=false&libraries=geometry&key=AIzaSyDW0dQoqfTMtAf1-H1lcpw-TKRcCimkhTc&callback=initMap" type="text/javascript">
+  </script>
+
+  <title>Kart Toaletter</title>
+</head>
+<body >
+  <header>
+    <h1>Toaletter</h1>
+    <nav>
+      <ul class="navigation">
+        <li><a href="./index.html">Hjem</a></li>
+        <li> <a href="./information.html">Informasjon</a> </li>
+        <li> <a class="active" href="./toilets.html">Toaletter</a></li>
+        <li> <a href="./playgrounds.html">Lekeplasser</a></li>
+        <li> <a href="./favorites.html">FavorittLekeplasser</a></li>
+        <li> <a href="./norgeRundt.html">Norge Rundt</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="mapContainer">
+      <div id="map"></div>
+
+      <fieldset>
+        <legend>Avansert Søk</legend>
+
+        <form class="searchForm" method="post" name="advsearchform">
+          <section id="checkboxSection">
+
+          <div>
+            <input id="herre" type="checkbox" value="herre">
+            <label for="herre">Herre</label>
+          </div>
+
+          <div>
+            <input id="dame" type="checkbox" value="dame">
+            <label for="dame">Dame</label>
+          </div>
+
+          <div>
+            <input id="rullestol" type="checkbox" value="rullestol">
+            <label for="rullestol">Rullestol</label>
+          </div>
+
+          <div>
+            <input id="stellerom" type="checkbox" value="stellerom">
+            <label for="stellerom">Stellerom</label>
+          </div>
+
+          <div>
+            <input id="gratis" type="checkbox" value="gratis">
+            <label for="gratis">Gratis</label>
+          </div>
+
+          <div>
+            <input id="aapent" type="checkbox" value="åpent">
+            <label for="åpent">Åpent</label>
+          </div>
+        </section>
+        <section id="fieldSection">
+
+          <div>
+            <label for="aapentKlokkeslett">Åpen klokkeslett</label>
+            <input id="aapentKlokkeslett" type="text" placeholder="Søk klokkeslett">
+          </div>
+
+          <div>
+            <label for="maxPris">Max pris</label>
+            <input id="maxPris" type="text" placeholder="Max pris">
+          </div>
+
+          <button type="button" id="buttonAdvanced" onclick="searchToilets('advanced')"
+          value="Søk">Søk Avansert med Skjema</button>
+
+          <div>
+            <input id="feltInput" type="text" placeholder="Hurtigsøk">
+
+            <button type="button" id="button" onclick="searchToilets('simple')" >Hurtigsøk</button>
+          </div>
+
+        </section>
+
+        </form>
+      </fieldset>
+
+    </div>
+    <div class="pContainer">
+
+    <div id = "dataområde"></div>
+
+      <ol id="arrayListen"></ol>
+
+    </div>
+  </main>
+
+  <footer>
+    <address>
+      <strong>Åpningstider:</strong> 10:00-17:00 <strong>Email:</strong> besokbergen@kontakt.no <strong>Hovedkontor:</strong> Ulrike Pihls hus, 5007 Bergen
+      <br /><br /><em>Nettsiden er laget av gruppe 7777, medlemmer 105, 129, 268 og 232</em>
+    </address>
+  </footer>
+
+</body>
+</html>

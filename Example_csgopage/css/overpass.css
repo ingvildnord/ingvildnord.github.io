@@ -1,0 +1,213 @@
+body, header, h1, h2, nav, ul, li, span, footer, a {
+  margin: 0;
+  padding: 0;
+}
+body {
+  /*Background Image from http://www.publicdomainpictures.net/view-image.php?image=226757&picture=smoke
+  by Paduret Dan Cristian */
+  background-image: linear-gradient(
+    rgba(62, 85, 86, 0.5), 
+    rgba(62, 85, 86, 0.5)), 
+  url(../images/background/smokeBackground.jpg);
+}
+h1, nav a, main ul, button, input[type=submit], h2, h3 {
+  font-family: 'Questrial', sans-serif;
+  text-transform: uppercase;
+  color: white;
+}
+h1 {
+  font-size: 1em;
+  padding-top: 1vh;
+  text-align: center;
+}
+p, label, input[type=text] {
+  font-family: 'Questrial', sans-serif;
+  line-height: 1.3;
+  color: white;
+}
+header {
+  margin: auto;
+  height: 10vh;
+  border-bottom: 1px solid white;
+}
+header nav {
+  margin-top: 0.5vh;
+  margin-right: 1vw;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+}
+header nav li {
+  padding-right: 1.2em;
+  font-size: 0.8em;
+}
+header nav a img { width: 8vw; }
+
+header nav a {
+  font-size: 1em;
+  text-decoration: none;
+}
+
+main { height: 85vh; }
+
+#mainName { display: flex; }
+
+main h2, h3 {
+  padding-top: 1.1em;
+  text-align: center;
+}
+main ul {
+  -moz-column-count: 2;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 20px;
+    column-count: 2;
+    column-gap: 20px;
+
+    text-align: center;
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+}
+main ul li {display: block;}
+
+main #mapLogo {
+  height: 5em;
+  margin-left: 1em;
+}
+main figure img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 80vw;
+}
+footer {
+  width: 100%;
+  height: 5vh;
+  border-top: 1px solid white;
+}
+footer form input[type=text], textarea  {
+  width: 100%;
+}
+footer #myModal p a, input[type=submit] {
+  color: #99ccff;
+}
+button, input[type=submit] {
+  background-color: transparent;
+  border: none;
+  float: right;
+  padding: 0.5em;
+  margin-right: 1em;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 10vh;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4); 
+}
+.modal-content {
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.7);
+  margin: auto;
+  padding: 30px;
+  border-radius: 5px;
+  width: 80%;
+}
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover, .close:focus, .fa, button {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+.fa {
+  position: relative;
+  left: 2%;
+  padding: 0.5vh;
+  width: 1em;
+  text-align: center;
+  margin: 5px 2px;
+  font-size: 12px;
+}
+
+/*FULLSCREEN CODE*/
+@media only screen and (min-width: 768px) {
+  h1 { 
+    float: left; 
+    margin-left: 2em;
+    font-size: 2.5em;
+  }
+  p { font-size: 1.4em; }
+
+  header {
+    height: 8vh;
+    text-align: center;
+  }
+  main { 
+    height: 83vh;
+    background-image:linear-gradient(
+    rgba(37,57,73, 0.8), 
+    rgba(37,57,73, 0.9)),
+    url(../images/background/overpassBackground.jpg);
+  }
+
+  footer {height: 7vh;}
+
+  header nav { padding-top: 1.3em; }
+
+  header nav a {font-size: 2em;}
+
+  header nav ul {
+    justify-content: center;
+  }
+  
+  header nav a img { width: 40px;}
+
+  header nav a img:hover { 
+    width: 45px; 
+    transition: all 0.3s;
+  }
+  main figure img { 
+    margin-top: -4em;
+    height: 50vh; 
+ }
+  main h2 { font-size: 3em; }
+
+  #mainName img {
+    height: 13vh;
+    margin-left: 2em;
+  }
+
+  main h3 { font-size: 1.5em; }
+
+  main li {font-size: 1.2em;}
+
+  footer form { width: 40vw;}
+
+  button {
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    margin-right: 4em;
+  }
+  .fa {
+    font-size: 50px;
+    padding: 1em;
+    margin-top: 1em;
+  }
+  button:hover, .fa:hover, nav a:hover, main li a:hover, input[type=submit]:hover { font-weight: bolder; }
+}

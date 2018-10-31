@@ -1,0 +1,354 @@
+/***************
+LAYOUT KODE, av Ingvild og Phuong
+****************/
+
+/*April 9 - Ny struktur på kode, gruppert inn i header, main og Footer -- Ingvild*/
+
+/*****Mobil-Først implementasjon******/
+
+html, body, header, main, footer, h1 { margin: 0; }
+
+/***********
+HEADER STIL
+************/
+
+h1, h2  { font-family: Georgia, serif; }
+
+/*Individual code for index header -- Ingvild*/
+.indexheader {
+  padding-top: 40vh;
+  padding-bottom: 2vh;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.2)
+    ), url("../img/bergenCity.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.indexheader h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 5em;
+ }
+
+ .indexheader h1 small, nav a, main .moduleText h3 {
+   font-family: Helvetica, sans-serif;
+  }
+
+.indexheader h1 small {
+  font-size: 0.5em;
+ }
+ .indexheader h1, .indexheader nav a {
+   color: #ffffff;
+   text-shadow: 0px 0px 16px #000000;
+ }
+
+ .indexheader nav { margin-top: 15px; }
+
+ /*For andre headers -- Ingvild*/
+ header:not(.indexheader) {
+   margin-top: 2em;
+   margin-bottom: 1em;
+   text-align: center;
+ }
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+}
+nav ul li {
+  margin: 0.4em 1em;
+}
+
+nav ul li a {
+  border-bottom: 7px solid transparent;
+  letter-spacing: 3px;
+  font-weight: 700;
+  transition: border 1s;
+}
+.active { border-bottom: 7px solid #03a9f4}
+
+/**********
+MAIN STIL
+***********/
+
+p {
+  color: dimgrey;
+  font-size: 1em;
+  line-height: 3em;
+}
+
+p, address, ol, legend, label, main input[type="text"]
+{ font-family: Helvetica, sans-serif;}
+
+main a, header nav a {
+  color: #000000;
+  text-decoration: none;
+}
+/*Kode for maps.html, søkefelt av Ingvild*/
+main fieldset {
+  border: none;
+  margin: 1em;
+  padding: 0;
+}
+main fieldset form div { padding: 0.7em 0em;}
+main fieldset form div button { margin: 0.7em 0em;}
+
+main fieldset input[type='checkbox'] {
+  width: 1.4em;
+  height: 1.4em;
+}
+main fieldset form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main fieldset input[type='text'] {
+  height: 2em;
+  width: 100%;
+  margin: 1em 0em;
+}
+
+main fieldset form #checkboxSection {
+  columns: 10vw 3;
+  width: 95vw;
+}
+
+main button, main input[type="submit"] {
+  padding: 1em;
+  background-color: transparent;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+  border: 2px solid #555555;
+}
+
+main section select {
+  padding: 1em;
+  margin: 2em 0em;
+}
+main section select option {}
+
+
+/*Flyttet styling for map -- Ingvild*/
+#map {
+  width: 100%;
+  height: 75vh;
+  background-color: grey;
+}
+
+#toalettListen {
+  margin: 2em;
+}
+
+#merMindre {
+  display: none;
+    width: 100%;
+    padding: 0px 0;
+    text-align: left;
+}
+#banner {
+  background-image: url("../img/Bryggen.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 400px;
+}
+
+#banner .content h1 {
+  position: relative;
+  top: 30px;
+  margin: 0 auto;
+  width: 700px;
+  font-family: book antiqua;
+  font-size: 35px;
+  text-align: center;
+  color: #000000;
+  opacity: 0.70;
+  letter-spacing: 2px;
+}
+
+#slideShow { overflow: hidden; }
+#slideShow img { width: 100%;}
+
+/*Animation code for Slideshow Ingvild*/
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.pContainer { margin: 1em 1em; }
+
+/*kode for kort -- Ingvild*/
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.module {
+    width: 25em;
+    height: 30em;
+    overflow: hidden;
+    margin: 1em;
+}
+
+.module .moduleText {
+  margin: 300px 0px 10px 25px;
+}
+.module h3, .moduleText p {
+  color:white;
+  text-shadow: 0 1px 0 black;
+  margin: 0;
+}
+.module h3 {
+  font-size: 2em;
+}
+.module button {
+  background-color: transparent;
+  color: #ffffff;
+  border: 4px solid #ffffff;
+  padding: 1em 3em;
+}
+
+.m1 {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.4)
+    ), url("../img/bergenCity.jpg");
+  }
+.m2 {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.4)
+    ), url("../img/Fisketorget2.jpg");
+  }
+
+.m3 {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.4)
+    ), url("../img/Bryggen.jpg");
+  }
+
+.m4 {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.4)
+    ), url("../img/Fisketorget2.jpg");
+  }
+
+/************
+FOOTER STIL
+*************/
+/* added flexbox to footer. phuong*/
+  footer {
+    display: flex;
+    justify-content: center;
+    font-size: 0.8em;
+    padding-top: 15px;
+    border-top: 2px solid darkgrey;
+}
+
+/**********************************
+MEDIA QUERIES - RESPONSIVE LAYOUTS
+**********************************/
+/*Tablet layout*/
+@media only screen and (min-width: 768px) {
+  header {
+    text-align: left;
+  }
+  header nav a {
+    font-size: 1.7em;
+  }
+
+  header nav li {
+    margin: 0.4em 3em;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    text-align: left;
+    margin-left: 2vw;
+  }
+  p { font-size: 1.2em;}
+
+  .pContainer { margin: 3em 5em; }
+  .module { margin: 2em 2em 0em 0em;}
+
+  footer{ font-size: 1.1em;}
+
+  #buttonAdvanced {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+
+}
+
+/*Laptop layout*/
+@media only screen and (min-width: 1224px) {
+header nav li a:hover:not(.active) {
+  border-bottom: 7px solid #03a9f4;
+}
+  main button, main input[type="submit"] {transition: 0.6s;}
+  main button:hover,  main input[type="submit"]:hover {
+    background-color: rgba(3, 169, 244, 0.5);
+    border-color: #03a9f4;
+  }
+
+  header nav ul {flex-wrap: nowrap;}
+
+  header:not(.indexheader) nav ul {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    justify-content: flex-start;
+  }
+
+  main fieldset { margin: 1em 3em 0em 2em;}
+
+  main fieldset form { display: inline-block; }
+
+  main fieldset form div label { margin: 1em; }
+
+  main fieldset form #checkboxSection {
+    columns: unset;
+    width: unset;
+  }
+
+  main section select { font-size:  1em;}
+  .mapContainer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+
+}
+
+/*Desktop layout*/
+@media only screen and (min-width: 1824px) {
+
+  .indexheader h1 {
+    font-size: 8em;
+  }
+
+}

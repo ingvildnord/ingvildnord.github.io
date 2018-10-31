@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+  <meta charset="utf-8">
+  <script type="text/javascript" src="js/maps.js"></script>
+  <title>Lekeplasser</title>
+</head>
+<body onload="lastData('playgrounds')" >
+  <header>
+    <h1>Lekeplasser</h1>
+    <nav>
+      <ul class="navigation">
+        <li><a  href="./index.html">Hjem</a></li>
+        <li> <a href="./information.html">Informasjon</a> </li>
+        <li> <a href="./toilets.html">Toaletter</a></li>
+        <li> <a class="active" href="./playgrounds.html">Lekeplasser</a></li>
+        <li> <a href="./favorites.html">FavorittLekeplasser</a></li>
+        <li> <a href="./norgeRundt.html">Norge Rundt</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="mapContainer">
+    <div id="map"></div>
+  </div>
+
+  <ol id="arrayListen"></ol>
+</main>
+
+<footer>
+  <address>
+    <strong>Åpningstider:</strong> 10:00-17:00 <strong>Email:</strong> besokbergen@kontakt.no <strong>Hovedkontor:</strong> Ulrike Pihls hus, 5007 Bergen
+    <br /><br /><em>Nettsiden er laget av gruppe 7777, medlemmer 105, 129, 268 og 232 </em>
+  </address>
+</footer>
+
+</body>
+
+<script src="js/maps.js">
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDW0dQoqfTMtAf1-H1lcpw-TKRcCimkhTc&callback=initMap">
+</script>
+
+
+</html>
