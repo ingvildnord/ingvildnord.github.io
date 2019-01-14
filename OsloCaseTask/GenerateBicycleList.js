@@ -11,8 +11,7 @@ document.addEventListener('DOMContentLoaded', function() { //Kjører når dokume
 function expu1() {
 
     var url = "https://oslobysykkel.no/api/v1";
-    var key = "fdd3b469a2ef1e7c79883d068865ddb2";
-
+    
     var promise = new Promise(function(resolve, reject) {
       var xhr = new XMLHttpRequest();
       xhr.open("GET", url, true);
@@ -35,7 +34,7 @@ function expu1() {
 
 //Variant 2
 function expu2() {
-    var key = "fdd3b469a2ef1e7c79883d068865ddb2";
+    
 
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function() {
@@ -44,7 +43,7 @@ function expu2() {
             document.getElementById("content").innerHTML = this.responseText;
         }
     };
-    xhr.open("GET", "https://oslobysykkel.no/api/v1", true);
+    xhr.open("GET", "https://oslobysykkel.no/api/v1/stations", true);
     xhr.setRequestHeader("Client-Identifier", key);
     xhr.send();
 }
