@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  /*Background Image from http://www.publicdomainpictures.net/view-image.php?image=226757&picture=smoke
+  by Paduret Dan Cristian */
+  background-image: linear-gradient(
+    rgba(62, 85, 86, 0.5), 
+    rgba(62, 85, 86, 0.5)), 
+  url(../images/smokeBackground.jpg);
+}
+
+header {
+  background: #434E81;
+  height: 5vh;
+}
+h1, nav a {
+  font-family: 'Questrial', sans-serif;
+  text-transform: uppercase;
+  color: white;
+}
+
+h1 {
+  padding-top: 7px;
+  padding-left: 3em;
+}
+
+nav {
+  height: 90vh;
+  overflow: hidden;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  height: 100%;
+}
+
+ul:hover li {
+    opacity: .25;
+}
+
+ul li:hover {
+  background-color: transparent;
+  flex-grow: 0.5;
+  opacity: 1;
+}
+
+nav li {
+  width: 13vw;
+  transition: all 0.3s;
+  transform: skewX(-10deg);
+  margin-right: -0.1vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+nav a {
+  display: block;
+  height: 100%;
+  font-size: 2em;
+  text-decoration: none;
+  text-align: center;
+}
+
+nav span {
+  padding-top: 2em;
+  display: block;
+  transform: skewX(10deg);
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  height: 5vh;
+  background-color: #606178;
+  z-index: 999;
+  opacity: 0.8;
+}
+
+nav li:first-child {
+  margin-left: -4.9em;
+  width: 15vw;
+}
+
+#mirage {
+  background-image: url('../images/mirageBackground.jpg');
+}
+
+#cache {
+  background-image: url('../images/cacheBackground.png');
+}
+
+#overpass {
+  background-image: url('../images/overpassBackground.png');
+}
+#nuke {
+  background-image: url('../images/nukeBackground.jpg');
+}
+
+#cobblestone {
+  background-image: url('../images/cobblestoneBackground.jpg');
+}
+
+#inferno {
+    background-image: url('../images/infernoBackground.jpg');
+}
+
+#train {
+   background-image: url('../images/trainBackground.jpg');
+}
+
+/*SOCIAL MEDIA ICONS*/
+.fa {
+  position: relative;
+  left: 2%;
+  padding: 10px;
+  font-size: 30px;
+  width: 1em;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-steam {
+  background: #212121;
+  color: white;
+}
+
+.fa:hover {
+  background: #434E81;
+  transition: all 0.5s;
+}
+
+/*MOBILE STYLE*/
+@media only screen and (max-device-width: 768px) {
+
+body {
+    width: 100%;
+    height: 100%;
+  }
+
+nav ul {
+  flex-direction: column;
+  text-align: center;
+
+}
+nav li {
+  width: 100%;
+  flex-grow: 1;
+  justify-content: space-around;
+  transform: skewX(0deg);
+
+  background-position: top center;
+}
+
+nav li a {
+  font-size: 1em;
+  transform: skewX(0deg);
+}
+nav li:first-child {
+  margin: 0;
+  width: 100%;
+}
+
+nav span {
+  transform: skewX(0deg);
+}
+}

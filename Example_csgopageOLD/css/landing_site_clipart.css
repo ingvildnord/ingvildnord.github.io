@@ -1,0 +1,116 @@
+* {
+  padding:0px;
+  margin:0px;
+}
+
+body {
+  height: 100%;
+}
+
+.container {
+  width: 80%;
+  }
+
+#logo {
+  height: 50px;
+  width: auto;
+  margin-left: -5%;
+ }
+
+header {
+  background: #434E81;
+  min-height: 3em;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+nav a, p, h1 {
+  font-family: 'Questrial', sans-serif;
+}
+
+h1 {
+  padding-top: 0.5em;
+  padding-left: 3em;
+  font-size: 1.5em;
+  color: white;
+}
+
+
+nav {
+  height: 90.1vh;
+  max-height: 100%;
+}
+
+nav ul {
+  height: 100%;
+
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  list-style: none;
+
+  text-align: center;
+}
+nav .middlelis {
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+nav li {
+  flex-grow: 1;
+  transition: all 0.3s;
+}
+
+nav #mirage, .middlelis, #train {
+  margin-right: -10.2vh;
+  min-width: 25vh;
+}
+
+nav a {
+  padding-top: 2em;
+
+  display: block;
+  height: 100%;
+
+
+  color: #285064;
+  transition: all 0.3s;
+  
+  font-size: 2em;
+  text-decoration: none;
+  text-align: center;
+
+  color: #fff;
+  background-color: #285064;
+}
+
+nav a:hover {
+  color: #fff;
+  background-color: #12242d;
+}
+
+footer {
+  display: block;
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  background-color: #606178;
+  z-index: 999;
+}
+
+#mirage {
+  width: 10vh;
+ -webkit-clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
+clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
+}
+
+#train {
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+}

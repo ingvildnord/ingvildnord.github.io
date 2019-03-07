@@ -1,0 +1,185 @@
+body, header, h1, nav, ul, li, span, footer, a {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    height: 100%;
+  /*Background Image from http://www.publicdomainpictures.net/view-image.php?image=226757&picture=smoke
+  by Paduret Dan Cristian */
+  background-image: linear-gradient(
+    rgba(62, 85, 86, 0.5), 
+    rgba(62, 85, 86, 0.5)), 
+  url(../images/smokeBackground.jpg);
+}
+
+h1, nav a {
+  font-family: 'Questrial', sans-serif;
+  text-transform: uppercase;
+  color: white;
+}
+
+h1 {
+  font-size: 1em;
+  padding-top: 7px;
+  padding-left: 3em;
+}
+
+header {
+  background: #434E81;
+  height: 5vh;
+}
+
+nav {
+  height: 90vh;
+  overflow: hidden;
+}
+
+nav ul {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+nav li {
+  width: 100vw;
+  flex-grow: 1;
+  margin-right: -0.1vh;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+nav img {
+  height: 10vh;
+  object-fit: cover;
+}
+
+nav a {
+  display: block;
+  height: 100%;
+  font-size: 2em;
+  text-decoration: none;
+  text-align: center;
+}
+
+nav span {
+  padding-top: 1em;
+  display: block;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  height: 5vh;
+  background-color: #606178;
+}
+
+.fa {
+  position: relative;
+  left: 2%;
+  padding: 1vh;
+  font-size: 1em;
+  width: 1em;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-steam {
+  background: #212121;
+  color: white;
+}
+
+.fa:hover {
+  background: #434E81;
+  transition: all 0.5s;
+}
+
+#mirage {
+  background-image: url('../images/mirageBackground.jpg');
+}
+
+#cache {
+  background-image: url('../images/cacheBackground.png');
+}
+
+#overpass {
+  background-image: url('../images/overpassBackground.png');
+}
+#nuke {
+  background-image: url('../images/nukeBackground.jpg');
+}
+
+#cobblestone {
+  background-image: url('../images/cobblestoneBackground.jpg');
+} 
+
+#inferno {
+    background-image: url('../images/infernoBackground.jpg');
+}
+
+#train {
+   background-image: url('../images/trainBackground.jpg');
+}
+
+@media only screen and (min-width: 768px) {
+
+  h1 {
+    font-size: 2em;
+  }
+
+  nav ul {
+    width: 90vw;
+    flex-direction: row;
+    flex-shrink: 0.3;
+  }
+
+  ul:hover li {
+    opacity: .25;
+  }
+
+  ul li:hover {
+    flex-grow: 2;
+    opacity: 1;
+  }
+
+  nav li {
+    width: 10vw;
+    transition: all 0.3s;
+    transform: skewX(-10deg);
+  }
+
+ /* nav li:after { 
+    background: rgba(77, 195, 255, 0.4);
+    background-size: contain;
+    z-index: 1;
+  }
+
+  nav li:hover:after {
+    background: none;
+  }*/
+
+  nav span {
+    transform: skewX(10deg);
+  }
+
+  nav li:first-child {
+  margin-left: -5em;
+  width: 12vw;
+  }
+
+}

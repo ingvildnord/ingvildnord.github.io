@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--HTML for Mirage-->
+<html>
+	<meta charset="utf-8">
+	<link href="css/lity.css" rel="stylesheet">
+	<link href="css/mirage.css" rel="stylesheet">
+	<script src="script/jquery.js"></script>
+	<script src="script/lity.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+	<title></title>
+<head>
+</head>
+<body>
+<header>
+	<div class="container">
+	
+	<a href="../../Ass5/images/fuckyeah.jpg">
+		<img id="logo" src="images/cslogo.png" href="https://www.vg.no"> <!-- FIX-->
+	</a>
+	
+	<nav>
+		<ul class="topnav">
+			<li><a class="active" href="mirage.html">Mirage</a></li>
+			<li><a href="cache.html">Cache</a></li>
+			<li><a href="overpass.html">Overpass</a></li>
+			<li><a href="nuke.html">Nuke</a></li>
+			<li><a href="cobblestone.html">Cobblestone</a></li>
+			<li><a href="inferno.html">Inferno</a></li>
+			<li><a href="train.html">Train</a></li>
+		</ul>
+	</nav>	
+	</div>
+</header>
+
+<div class="logo">
+	<img id="mapLogo" src="images/mirage-logo.png" alt="Mirage logo">
+		<h1>Mirage</h1>
+</div>
+
+<div class="map">
+	<img src="images/mirage.jpg" id="mapImage" style="width: 800px; max-width: 110%; height: auto;" alt="" usemap="#nadeMap" />
+		<map name="nadeMap">
+			<area id="stairs" shape="circle" coords="337, 223, 8" href="https://www.youtube.com/watch?v=9QZ2sEEM0Tg" data-lity data-lity-desc="Smoke stairs" alt="Video showing the smoke" />
+			<area shape="circle" coords="373, 125, 13" href="https://www.youtube.com/watch?v=KuojsN4DgT8" data-lity data-lity-desc="Smoke catwalk" alt="Video showing how to smoke catwalk" />
+			<area shape="circle" coords="301, 293, 16" href="https://www.youtube.com/watch?v=Qrdiw2YJXWc" data-lity data-lity-desc="Smoke CT" alt="Video showing how to smoke CT" />
+		</map>
+	
+		<script src="script/jquery.rwdImageMaps.min.js"></script>
+	<script>
+		$(document).ready(function(e) {
+		$('img[usemap]').rwdImageMaps();
+	});
+	</script>
+	<p>Click the marked spots to learn the smoke</p>
+</div>
+<div class="footer">
+</div>
+</body>
+</html>
